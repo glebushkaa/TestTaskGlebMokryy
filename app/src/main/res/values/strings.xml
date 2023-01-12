@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tesk Task Gleb Mokryy</string>
+
+    <string name="add_bmi">Add BMI Details</string>
+    <string name="bmi_details">BMI Details</string>
+    <string name="personal_data">Enter Personal Detail</string>
+    <string name="name">Name</string>
+    <string name="calculate_bmi">Calculate Your Body Mass Index</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="calculate">Calculate</string>
+    <string name="body_mass_index">BODY MASS INDEX</string>
+    <string name="status_index">HELLO, * YOU ARE _</string>
+    <string name="normal_range">Normal BMI range: 18.5kg/m2 – 25kg/m2</string>
+    <string name="ponderal_index">Ponderal Index: +kg/m3</string>
+
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="share_via">Share via</string>
+
+    <string name="picture_cache_exception">An error occurred while trying to cache picture</string>
+    <string name="no_such_file_exception">Unfortunately, no such file was found</string>
+    <string name="path_out_provider_exception">File is outside the paths supported by the provider</string>
+    <string name="show_ad_exception">Unfortunately, show ad have failed</string>
+    <string name="website_name">Website name</string>
+    <string name="lorem_ipsum_ad">The Vocabulary is an app with lots of vocabulary to study.</string>
+    <string name="install">INSTALL</string>
+    <string name="enter_name">Enter your name</string>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

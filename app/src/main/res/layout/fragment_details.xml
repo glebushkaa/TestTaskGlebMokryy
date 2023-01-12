@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@drawable/bar_gradient">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backBtn"
+            style="@style/SimpleTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="@dimen/back_button_start_margin"
+            android:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/back_icon"
+            app:iconTint="@color/white" />
+
+        <TextView
+            style="@style/BarTextStyle"
+            android:text="@string/bmi_details" />
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/card_details_side_margin"
+        android:layout_marginTop="@dimen/top_card_details_margin"
+        android:layout_marginEnd="@dimen/card_details_side_margin"
+        android:layout_marginBottom="@dimen/bottom_card_details_margin"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/bmiDetailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_gradient"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/head_bmi_height"
+                android:layout_marginStart="@dimen/side_bmi_head_text_margin"
+                android:layout_marginTop="@dimen/top_bmi_head_text_margin"
+                android:layout_marginEnd="@dimen/side_bmi_head_text_margin"
+                android:alpha="0.4"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="@dimen/head_bmi_elevation"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/head_bmi_stroke_width">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="@string/body_mass_index"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/mainPart"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/main_body_number_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/bmi_body_top_margin"
+                android:background="@drawable/shape_text_line"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/statusBMIText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/conclusion_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_range_top_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/normal_range"
+                android:textColor="@color/white"
+                android:textSize="@dimen/conclusion_text_size" />
+
+            <TextView
+                android:id="@+id/ponderalIndexText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ponderal_index_top_margin"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/conclusion_text_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/bmi_card_buttons_bottom_margin">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareBtn"
+                style="@style/DetailsCardButtonStyle"
+                android:layout_marginStart="@dimen/details_buton_card_side_margin"
+                android:layout_marginEnd="@dimen/details_buton_internal_side_margin"
+                android:text="@string/share"
+                app:icon="@drawable/share_icon" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rateBtn"
+                style="@style/DetailsCardButtonStyle"
+                android:layout_marginStart="@dimen/details_buton_internal_side_margin"
+                android:layout_marginEnd="@dimen/details_buton_card_side_margin"
+                android:text="@string/rate"
+                app:icon="@drawable/rate_icon" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/native_ad_margin"
+        android:layout_marginEnd="@dimen/native_ad_margin"
+        android:layout_marginBottom="@dimen/native_ad_margin"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/native_ad_corner_radius"
+        app:cardElevation="@dimen/native_ad_card_elevation"
+        app:strokeColor="@color/purple"
+        app:strokeWidth="@dimen/native_ad_stroke_width" />
+
+</FrameLayout>

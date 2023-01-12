@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/calculateFragment">
+
+
+    <fragment
+        android:id="@+id/calculateFragment"
+        android:name="ua.gleb.android.tesktaskglebmokryy.presenter.fragments.CalculateFragment"
+        android:label="CalculateFragment">
+        <action
+            android:id="@+id/calculate_to_details"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/left_in_transition"
+            app:exitAnim="@anim/left_out_transition"
+            app:popEnterAnim="@anim/right_in_transition"
+            app:popExitAnim="@anim/right_out_transition"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="ua.gleb.android.tesktaskglebmokryy.presenter.fragments.DetailsFragment"
+        android:label="DetailsFragment" />
+
+
+</navigation>

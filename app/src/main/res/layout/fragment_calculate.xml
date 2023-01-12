@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@drawable/bar_gradient">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backBtn"
+            style="@style/SimpleTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="@dimen/back_button_start_margin"
+            android:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/back_icon"
+            app:iconTint="@color/white" />
+
+        <TextView
+            style="@style/BarTextStyle"
+            android:text="@string/add_bmi" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/head_margin"
+        android:fontFamily="@font/raleway_regular"
+        android:text="@string/personal_data"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/head_text_size" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_side_margin"
+        android:layout_marginTop="@dimen/top_input_margin"
+        android:layout_marginEnd="@dimen/input_side_margin"
+        android:hint="@string/name"
+        app:boxCornerRadiusBottomEnd="@dimen/default_corner_size"
+        app:boxCornerRadiusBottomStart="@dimen/default_corner_size"
+        app:boxCornerRadiusTopEnd="@dimen/default_corner_size"
+        app:boxCornerRadiusTopStart="@dimen/default_corner_size"
+        app:boxStrokeColor="@color/gray"
+        app:boxStrokeWidth="@dimen/input_stroke_width"
+        app:hintTextColor="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height"
+            android:fontFamily="@font/poppins_medium"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="@dimen/input_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="@string/calculate_bmi"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/heads_card_side_margin"
+        android:layout_marginTop="@dimen/heads_card_top_margin"
+        android:layout_marginEnd="@dimen/heads_card_side_margin"
+        app:cardElevation="@dimen/heads_card_elevation">
+
+        <TextView
+            style="@style/HeaderPickerTextStyle"
+            android:layout_gravity="start"
+            android:text="@string/weight" />
+
+        <TextView
+            style="@style/HeaderPickerTextStyle"
+            android:layout_gravity="center"
+            android:text="@string/height" />
+
+        <TextView
+            style="@style/HeaderPickerTextStyle"
+            android:layout_gravity="end"
+            android:text="@string/gender" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/pickers_side_margin"
+        android:layout_marginTop="@dimen/pickers_top_margin"
+        android:layout_marginEnd="@dimen/pickers_side_margin"
+        android:theme="@style/NumberPicker"
+        app:cardCornerRadius="@dimen/pickers_card_corner_radius"
+        app:cardElevation="@dimen/pickers_card_elevation">
+
+        <NumberPicker
+            android:id="@+id/weightPicker"
+            android:layout_width="@dimen/picker_width"
+            android:layout_height="@dimen/picker_height"
+            android:layout_marginStart="@dimen/side_picker_margin" />
+
+        <NumberPicker
+            android:id="@+id/heightPicker"
+            android:layout_width="@dimen/picker_width"
+            android:layout_height="@dimen/picker_height"
+            android:layout_gravity="center" />
+
+        <NumberPicker
+            android:id="@+id/genderPicker"
+            android:layout_width="@dimen/picker_width"
+            android:layout_height="@dimen/picker_height"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/side_picker_margin" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calculateBtn"
+        style="@style/BaseMaterialButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calculate_button_height"
+        android:layout_marginStart="@dimen/calculate_button_side_margin"
+        android:layout_marginTop="@dimen/calculate_button_top_margin"
+        android:layout_marginEnd="@dimen/calculate_button_side_margin"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/raleway_bold"
+        android:letterSpacing="0"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textSize="@dimen/calculate_button_text_size"
+        app:backgroundTint="@null" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="app_bar_height">60dp</dimen>
+    <dimen name="app_bar_text_size">20sp</dimen>
+    <dimen name="head_text_size">24sp</dimen>
+    <dimen name="head_margin">52dp</dimen>
+    <dimen name="default_corner_size">8dp</dimen>
+
+    <dimen name="splash_icon_size">200dp</dimen>
+
+    <dimen name="picker_width">60dp</dimen>
+    <dimen name="picker_height">120dp</dimen>
+    <dimen name="picker_text_size">16sp</dimen>
+    <dimen name="pickers_side_margin">40dp</dimen>
+    <dimen name="pickers_top_margin">20dp</dimen>
+    <dimen name="pickers_card_corner_radius">0dp</dimen>
+    <dimen name="pickers_card_elevation">8dp</dimen>
+    <dimen name="side_picker_margin">20dp</dimen>
+
+    <dimen name="back_button_start_margin">12dp</dimen>
+
+    <dimen name="text_input_height">60dp</dimen>
+    <dimen name="input_side_margin">40dp</dimen>
+    <dimen name="top_input_margin">32dp</dimen>
+    <dimen name="input_stroke_width">1dp</dimen>
+    <dimen name="input_text_size">14sp</dimen>
+
+    <dimen name="head_picker_text_width">60dp</dimen>
+    <dimen name="heads_card_side_margin">60dp</dimen>
+    <dimen name="heads_card_top_margin">24dp</dimen>
+    <dimen name="heads_card_elevation">0dp</dimen>
+    <dimen name="head_picker_text_size">14sp</dimen>
+
+    <dimen name="calculate_button_height">50dp</dimen>
+    <dimen name="calculate_button_side_margin">40dp</dimen>
+    <dimen name="calculate_button_top_margin">32dp</dimen>
+    <dimen name="calculate_button_text_size">18sp</dimen>
+
+    <dimen name="card_details_side_margin">50dp</dimen>
+    <dimen name="top_card_details_margin">140dp</dimen>
+    <dimen name="bottom_card_details_margin">200dp</dimen>
+
+    <dimen name="top_bmi_head_text_margin">40dp</dimen>
+    <dimen name="side_bmi_head_text_margin">-5dp</dimen>
+    <dimen name="head_bmi_height">30dp</dimen>
+    <dimen name="head_bmi_elevation">0dp</dimen>
+    <dimen name="head_bmi_stroke_width">1dp</dimen>
+
+    <dimen name="bmi_body_top_margin">20dp</dimen>
+    <dimen name="main_body_number_height">120dp</dimen>
+    <dimen name="main_body_text_size">100sp</dimen>
+    <dimen name="secondary_text_size">48sp</dimen>
+    <dimen name="conclusion_text_size">12sp</dimen>
+    <dimen name="ponderal_index_top_margin">4dp</dimen>
+    <dimen name="normal_range_top_margin">6dp</dimen>
+    <dimen name="bmi_card_buttons_bottom_margin">20dp</dimen>
+
+    <dimen name="details_buttons_height">50dp</dimen>
+    <dimen name="details_buttons_text_size">14sp</dimen>
+    <dimen name="details_buttons_stroke_size">1dp</dimen>
+    <dimen name="details_buton_card_side_margin">12dp</dimen>
+    <dimen name="details_buton_internal_side_margin">6dp</dimen>
+
+    <dimen name="native_ad_margin">8dp</dimen>
+    <dimen name="native_ad_corner_radius">4dp</dimen>
+    <dimen name="native_ad_card_elevation">4dp</dimen>
+    <dimen name="native_ad_stroke_width">1dp</dimen>
+    <dimen name="native_ad_height">140dp</dimen>
+
+    <dimen name="side_ad_picture_height">20dp</dimen>
+    <dimen name="ad_choices_margin">10dp</dimen>
+    <dimen name="ad_badge_width">32dp</dimen>
+    <dimen name="side_ad_text_margin">10dp</dimen>
+    <dimen name="top_ad_text_margin">8dp</dimen>
+    <dimen name="ad_icon_size">60dp</dimen>
+    <dimen name="head_ad_text_size">20sp</dimen>
+    <dimen name="body_ad_text_size">16sp</dimen>
+    <dimen name="text_ad_side_margin">10dp</dimen>
+
+    <dimen name="install_ad_height">40dp</dimen>
+    <dimen name="install_btn_side_margin">10dp</dimen>
+    <dimen name="install_btn_vertical_margin">12dp</dimen>
+    <dimen name="install_ad_text_size">18sp</dimen>
+
+</resources>

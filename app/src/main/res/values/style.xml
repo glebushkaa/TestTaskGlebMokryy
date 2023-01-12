@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberPicker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/blue</item>
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="android:fontFamily">@font/raleway_black</item>
+        <item name="android:textSize">@dimen/picker_text_size</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+    </style>
+
+    <style name="BarTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="HeaderPickerTextStyle">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:layout_width">@dimen/head_picker_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/head_picker_text_size</item>
+    </style>
+
+    <style name="DetailsCardButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/details_buttons_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/details_buttons_text_size</item>
+        <item name="cornerRadius">@dimen/default_corner_size</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconTintMode">multiply</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">@dimen/details_buttons_stroke_size</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+    </style>
+
+    <style name="BaseMaterialButton">
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+    </style>
+
+    <style name="SimpleTextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+    </style>
+</resources>
